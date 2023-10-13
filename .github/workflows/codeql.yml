@@ -40,7 +40,7 @@ jobs:
           languages: ${{ matrix.language }}
 
       - name: Build with dotnet
-        working-directory: /home/runner/work/webgoat7test/webgoat7test/WebGoatCore/
+        working-directory: /home/runner/work/${{ github.workspace }}/WebGoatCore/
         run: dotnet build WebGoatCore.csproj
 
       # - name: Autobuild
